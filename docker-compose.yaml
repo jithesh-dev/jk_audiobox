@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  app:
+    build: ./
+    container_name: blinkist_app
+    ports:
+      - '3233:3000'
+    volumes:
+      - ./files:/files
+
